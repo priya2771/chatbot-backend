@@ -46,7 +46,7 @@ with app.app_context():
     db.create_all()
 
 # Create a test user with username 'testuser' and password 'testpassword'
-hashed_password = bcrypt.generate_password_hash('psd').decode('utf-8')
+hashed_password = bcrypt.generate_password_hash('12345').decode('utf-8')
 test_user = User(username='test', password=hashed_password)
 
 # Create a test user with username 'test' and password 'psd'
